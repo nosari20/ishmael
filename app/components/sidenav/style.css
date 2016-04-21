@@ -1,0 +1,93 @@
+:host{
+    width: 200px;
+    box-sizing: border-box;
+    padding: 24px 0;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    z-index: 1000;
+
+    position: absolute;
+    height: 100%;
+    top: 0;
+
+    -webkit-transition: transform .2s;
+    -moz--transition: transform .2s;
+    -ms-transition: transform .2s;
+    -o-transition: transform .2s;
+    transition: transform .2s;
+
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+
+    max-height: 100%;
+    left: 0;
+    box-shadow: 0 2px 2px 0 #000,0 3px 1px -2px #000,0 1px 5px 0 #000;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+
+    color: #eceff1 !important;
+    background-color: #212121 !important;
+}
+
+.toggle{
+    display: none;
+
+}
+.toggle i{
+    float: right;
+}
+
+@media screen and (max-width: 1575px){
+    :host{
+        -webkit-transform: translateX(-200px);
+        -moz-transform: translateX(-200px);
+        -ms-transform: translateX(-200px);
+        -o-transform: translateX(-200px);
+        transform: translateX(-200px);
+    }
+    :host.open{
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    .toggle{
+        display: block;
+    }
+}
+
+
+header{
+    box-sizing: border-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    padding: 16px;
+    flex-shrink: 0;
+}
+
+

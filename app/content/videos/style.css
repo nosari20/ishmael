@@ -1,0 +1,14 @@
+:host(.page) {
+    display: inline-block;
+    width: 100%;
+    -webkit-transition: all ease-in-out 0.3s;
+    transition: all ease-in-out 0.3s;
+}
+
+:host(.page.ng-enter) {
+    transform: translateX(100%);
+}
+
+:host(.page.ng-enter-active) {
+    transform: rotateY(0deg);
+}

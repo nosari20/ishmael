@@ -1,0 +1,1 @@
+{"version":3,"file":"subheader.js","sourceRoot":"ng2-material/","sources":["components/subheader/subheader.ts"],"names":[],"mappings":";;;;;;;;;;AAAA,qBAAwB,eAAe,CAAC,CAAA;AAYxC;IAAA;IACA,CAAC;IAXD;QAAC,gBAAS,CAAC;YACT,QAAQ,EAAE,cAAc;YACxB,IAAI,EAAE;gBACJ,OAAO,EAAE,cAAc;aACxB;YACD,QAAQ,EAAE,mIAGD;SACV,CAAC;;mBAAA;IAEF,kBAAC;AAAD,CAAC,AADD,IACC;AADY,mBAAW,cACvB,CAAA"}

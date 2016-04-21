@@ -1,0 +1,21 @@
+:host{
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 32px 16px;
+    color: #9e9e9e;
+    background-color: #212121 !important;
+    margin-left: 200px;
+
+}
+@media screen and (max-width: 1575px){
+    :host{
+        margin-left: 0;
+    }
+}

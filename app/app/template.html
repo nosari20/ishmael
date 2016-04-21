@@ -1,0 +1,28 @@
+<layout>
+    <header>
+
+        <aside>
+            <sidenav-link [_routeName]="'Home'">Home</sidenav-link>
+            <sidenav-link [_routeName]="'Contact'">Contact</sidenav-link>
+        </aside>
+
+
+        <!--
+        <header-link [_routeName]="'Home'">Home</header-link>
+        <header-link [_routeName]="'Contact'">Contact</header-link>
+        -->
+
+        <search></search>
+
+    </header>
+
+
+    <main>
+
+        <section>
+            <router-outlet></router-outlet>
+        </section>
+
+    </main>
+    <footer></footer>
+</layout>

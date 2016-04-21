@@ -1,0 +1,35 @@
+:host{
+    font-weight: 500;
+    font-size: 13px;
+    text-transform: uppercase;
+    line-height: 64px;
+    box-sizing: border-box;
+    white-space: nowrap;
+    height: 100%;
+    display: flex;
+}
+
+:host:hover{
+    background: rgba(255,255,255,.1);
+}
+
+:host a{
+    color: #fff !important;
+    font-weight: 500;
+    font-size: 13px;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 64px;
+    padding: 0 16px;
+    box-sizing: border-box;
+    border-bottom: 3px solid transparent;
+    height: 100%;
+    display: block;
+    opacity: .9;
+    width: 100%;
+}
+
+:host a.active{
+    opacity: 1;
+    background: rgba(255,255,255,.1);
+}

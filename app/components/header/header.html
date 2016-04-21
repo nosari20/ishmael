@@ -1,0 +1,22 @@
+<div class="docs-navigation__container">
+
+    <sidenav [open]="nav"  (toggleNav)="toggleNav()">
+
+
+        <ng-content select="aside"></ng-content>
+
+    </sidenav>
+
+
+
+
+    <nav>
+
+        <span class="side-toggle" (click)="toggleNav()"><i class="material-icons">menu</i></span>
+
+        <ng-content></ng-content>
+
+
+    </nav>
+</div>
+

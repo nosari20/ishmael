@@ -1,0 +1,36 @@
+<card [title]="'Videos'" [className]="'mdl-cell--12-col'">
+
+    <article>
+
+        <input [(ngModel)]="_query" (change)="reload()">
+
+
+
+
+        <iframe *ngFor="#video of _list"width="560" height="315" src="https://www.youtube.com/v/{{video.id.videoId}}" frameborder="0" allowfullscreen></iframe>
+
+        <loader *ngIf="!_list"></loader>
+
+
+
+    </article>
+
+
+
+
+
+    <nav>
+        <a class="mdl-button mdl-button--colored">
+            Get Started
+        </a>
+    </nav>
+
+
+    <menu>
+        <button class="mdl-button mdl-button--icon">
+            <i class="material-icons">share</i>
+        </button>
+    </menu>
+
+
+</card>

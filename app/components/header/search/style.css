@@ -1,0 +1,78 @@
+:host{
+    display: block;
+    width: 100%;
+    padding-right: 5px;
+
+}
+
+::-webkit-input-placeholder {
+    color: #fff;
+}
+::-moz-placeholder {
+    color: #fff;
+    opacity: 1;
+}
+:-ms-input-placeholder {
+    color: #fff;
+}
+
+.input-field{
+    background-color:transparent;
+    line-height: 64px;
+    position: relative;
+}
+input {
+    background-color: transparent;
+    outline: none;
+    width: calc(100% - 3rem);
+    padding: 0;
+    box-shadow: none;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    transition: all .3s;
+    -webkit-appearance: textfield;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    display: block;
+    line-height: 50px;
+    padding-left: 3rem;
+    height: 50px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 2px;
+    margin-top: 5px;
+
+
+}
+
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button,
+input::-webkit-search-results-button,
+input::-webkit-search-results-decoration {
+    display: none;
+}
+input:focus {
+    background: #ffffff;
+}
+
+input:focus ~ i {
+    visibility: visible;
+}
+i{
+    position: absolute;
+    line-height: 50px;
+    top:0;
+    color:#000000;
+    visibility: hidden;
+}
+
+i.reset{
+    right: 5px;
+}
+
+i.search{
+    left: 5px;
+}
+
