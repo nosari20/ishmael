@@ -8,7 +8,10 @@ import {Component} from 'angular2/core';
 
 export class Search {
 
+    private _query:String='';
+
+
+    clear(){
+        this._query='';
+    }
 }
-
-
-

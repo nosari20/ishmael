@@ -1,19 +1,21 @@
 :host{
     display: block;
-    width: 100%;
+    width: calc(100% - 65px);
     padding-right: 5px;
+    position: absolute;
+    max-width: 1170px
 
 }
 
 ::-webkit-input-placeholder {
-    color: #fff;
+    color: #000000;
 }
 ::-moz-placeholder {
-    color: #fff;
+    color: #000000;
     opacity: 1;
 }
 :-ms-input-placeholder {
-    color: #fff;
+    color: #000000;
 }
 
 .input-field{
@@ -22,7 +24,7 @@
     position: relative;
 }
 input {
-    background-color: transparent;
+    background-color: #ffffff;
     outline: none;
     width: calc(100% - 3rem);
     padding: 0;
@@ -54,11 +56,11 @@ input::-webkit-search-results-decoration {
     display: none;
 }
 input:focus {
-    background: #ffffff;
+
 }
 
-input:focus ~ i {
-    visibility: visible;
+input:focus ~ i,input.ng-valid ~ i, .input-field:hover i, i:hover, i:focus{
+    visibility: visible !important;
 }
 i{
     position: absolute;
@@ -66,6 +68,9 @@ i{
     top:0;
     color:#000000;
     visibility: hidden;
+    outline: none;
+    cursor: pointer;
+
 }
 
 i.reset{
@@ -75,4 +80,31 @@ i.reset{
 i.search{
     left: 5px;
 }
+
+.result{
+    position: absolute;
+    background: #ffffff;
+    width: calc(100% - 60px);
+    z-index: 10;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    visibility: hidden;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    padding: 0 30px;
+    line-height: initial;
+    color: rgba(0,0,0, 0.54);
+    margin-top: -1px;
+}
+
+.result span{
+    display: block;
+    width: 100%;
+    padding: 15px;
+}
+
+input.ng-valid:focus ~ .result, .result:hover , .result:focus,  input.ng-valid ~ i:focus ~ .result, input.ng-valid ~ i:hover ~ .result{
+    visibility: visible;
+}
+
+
 

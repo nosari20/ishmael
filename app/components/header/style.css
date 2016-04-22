@@ -93,7 +93,6 @@ nav{
     -ms-user-select: none;
     user-select: none;
     margin-bottom: -16px;
-    margin-left:200px;
 }
 nav .mdl-navigation__link, section.download {
     font-weight: 500;
@@ -121,6 +120,7 @@ nav .mdl-navigation__link, section.download {
     box-sizing: border-box;
     white-space: nowrap;
     height: 100%;
+    cursor: pointer;
 }
 .side-toggle *{
     vertical-align: middle;

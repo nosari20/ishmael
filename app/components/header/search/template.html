@@ -1,9 +1,21 @@
 
+<div class="wrapper">
+    <div center class="input-field">
 
-<div center class="input-field">
+        <input id="search" type="search" [(ngModel)]="_query" required value="{{_query}}" placeholder="Rechercher..." autocomplete="off">
+        <i class="material-icons reset" (click)="clear()">close</i>
+        <i class="material-icons search">search</i>
+        <label for="search"></label>
+        <div class="result">
+            <span>Lorem ipsum - J.M Debicky</span>
+            <span>Dolor sit amet - A. Parwany</span>
+            <span>Lorem dolor - M. Mallinger</span>
 
-    <input id="search" type="search" required placeholder="Rechercher...">
-    <i class="material-icons reset">close</i>
-    <i class="material-icons search">search</i>
-    <label for="search"></label>
+        </div>
+
+    </div>
+
+
+
 </div>
+

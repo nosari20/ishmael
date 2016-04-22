@@ -20,7 +20,11 @@ System.register(['angular2/core'], function(exports_1, context_1) {
         execute: function() {
             Search = (function () {
                 function Search() {
+                    this._query = '';
                 }
+                Search.prototype.clear = function () {
+                    this._query = '';
+                };
                 Search = __decorate([
                     core_1.Component({
                         selector: 'search',
