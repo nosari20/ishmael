@@ -11,35 +11,28 @@ System.register(['angular2/core'], function(exports_1, context_1) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
     var core_1;
-    var Search;
+    var Book;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
             }],
         execute: function() {
-            Search = (function () {
-                function Search() {
-                    this._query = '';
+            Book = (function () {
+                function Book() {
                 }
-                Search.prototype.clear = function () {
-                    this._query = '';
-                };
-                Search.prototype.search = function () {
-                    //TODO
-                };
-                Search = __decorate([
+                Book = __decorate([
                     core_1.Component({
-                        selector: 'search',
-                        templateUrl: 'app/components/header/search/template.html',
-                        styleUrls: ['app/components/header/search/style.css']
+                        selector: 'book',
+                        templateUrl: 'app/components/book/template.html',
+                        styleUrls: ['app/components/book/style.css']
                     }), 
                     __metadata('design:paramtypes', [])
-                ], Search);
-                return Search;
+                ], Book);
+                return Book;
             }());
-            exports_1("Search", Search);
+            exports_1("Book", Book);
         }
     }
 });
-//# sourceMappingURL=search.component.js.map
+//# sourceMappingURL=book.component.js.map

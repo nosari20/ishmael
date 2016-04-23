@@ -14,4 +14,8 @@ export class Search {
     clear(){
         this._query='';
     }
+
+    search(){
+        //TODO
+    }
 }
