@@ -1,0 +1,6 @@
+
+<fab (click)="openFile()">
+    <i class="material-icons">file_upload</i>
+</fab>
+<input type="file" multiple [ng-file-select]="options" (onUpload)="upload($event)" >
+<md-input [name]="'file'" [type]="'text'" [disabled]="true">{{fileName}}</md-input>

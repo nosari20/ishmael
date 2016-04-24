@@ -47,6 +47,10 @@
 
 .toggle{
     display: none;
+    width: auto;
+    position: absolute;
+    right: 2px;
+    top: 10px;
 
 }
 .toggle i{
@@ -90,4 +94,13 @@ header{
     flex-shrink: 0;
 }
 
+.login{
+    padding: 0 16px 16px;
 
+}
+.login .user{
+    font-size: larger;
+}
+.login .email{
+    font-size: smaller;
+}
