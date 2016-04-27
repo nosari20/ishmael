@@ -1,4 +1,4 @@
-System.register(['angular2/core', 'angular2/router', "../sidenav/sidenav.component"], function(exports_1, context_1) {
+System.register(['angular2/core', 'angular2/router', "../sidenav/sidenav.component", "../snackbar/snackbar.component"], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,7 +10,7 @@ System.register(['angular2/core', 'angular2/router', "../sidenav/sidenav.compone
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, router_1, sidenav_component_1;
+    var core_1, router_1, sidenav_component_1, snackbar_component_1;
     var Header;
     return {
         setters:[
@@ -22,6 +22,9 @@ System.register(['angular2/core', 'angular2/router', "../sidenav/sidenav.compone
             },
             function (sidenav_component_1_1) {
                 sidenav_component_1 = sidenav_component_1_1;
+            },
+            function (snackbar_component_1_1) {
+                snackbar_component_1 = snackbar_component_1_1;
             }],
         execute: function() {
             Header = (function () {
@@ -47,7 +50,7 @@ System.register(['angular2/core', 'angular2/router', "../sidenav/sidenav.compone
                         selector: 'header',
                         templateUrl: 'app/components/header/header.html',
                         styleUrls: ['app/components/header/style.css'],
-                        directives: [sidenav_component_1.Sidenav]
+                        directives: [sidenav_component_1.Sidenav, snackbar_component_1.Snackbar]
                     }), 
                     __metadata('design:paramtypes', [router_1.Router])
                 ], Header);

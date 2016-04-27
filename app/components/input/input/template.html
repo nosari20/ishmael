@@ -1,4 +1,4 @@
-<input type="{{type}}" name="{{name}}" [disabled]="disabled" required>
+<input type="{{type}}" name="{{name}}" [(ngModel)]="data" [disabled]="disabled" (change)="changeValue(data)" autocomplete="off" required>
 <span class="highlight"></span>
 <span class="bar"></span>
 <label><ng-content></ng-content></label>

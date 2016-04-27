@@ -1,0 +1,83 @@
+:host {
+    transition-property: opacity, bottom, left, right, width, margin, border-radius;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    font-size: 14px;
+    min-height: 14px;
+    background-color: #323232;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    line-height: 22px;
+    padding: 18px 24px;
+    z-index: 999;
+    right: 0px;
+
+
+
+}
+:host(.closed){
+    display: none;
+}
+
+
+@media (min-width: 1575px) {
+    :host {
+        margin-top: 24px !important;
+
+    }
+}
+
+@media (min-width: 640px) {
+    :host {
+        /*
+        Desktop:
+          Single-line snackbar height: 48 dp tall
+          Minimum width: 288 dp
+          Maximum width: 568 dp
+          2 dp rounded corner
+          Text: Roboto Regular 14 sp
+          Action button: Roboto Medium 14 sp, all-caps text
+          Default background fill: #323232 100%
+        */
+
+        min-width: 288px;
+        max-width: 568px;
+        border-radius: 2px;
+        margin: 24px;
+        margin-top: 0;
+
+    }
+}
+
+@media (max-width: 640px) {
+    :host {
+        /*
+        Mobile:
+          Single-line snackbar height: 48 dp
+          Multi-line snackbar height: 80 dp
+          Text: Roboto Regular 14 sp
+          Action button: Roboto Medium 14 sp, all-caps text
+          Default background fill: #323232 100%
+        */
+        left: 0px;
+        right: 0px;
+        margin-top: 5px;
+    }
+}
+
+
+.action {
+    background: inherit;
+    display: inline-block;
+    border: none;
+    font-size: inherit;
+    text-transform: uppercase;
+    color: #F44336;
+    margin: 0px 0px 0px 24px;
+    padding: 0px;
+    min-width: min-content;
+    box-shadow: none;
+}
+

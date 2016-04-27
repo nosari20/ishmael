@@ -1,0 +1,15 @@
+
+<h1>Login</h1>
+
+<div class="wrapper">
+
+    <div class="group">
+        <md-input [type]="'userEmail'" [name]="'email'" [(ngModel)]="user.email">E-Mail{{user.email}}</md-input>
+    </div>
+    <div class="group">
+        <md-input [type]="'userPassword'" [name]="'password'" [(ngModel)]="user.password">Password</md-input>
+    </div>
+    <button (click)="validate()">Login</button>
+</div>
+
+

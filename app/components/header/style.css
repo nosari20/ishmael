@@ -22,12 +22,13 @@
     min-height: 60px;
     max-height: 1000px;
     z-index: 3;
-    background-color: rgb(63,81,181);
+    background-color: #F44336;
     color: rgb(255,255,255);
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
     transition-duration: 0.2s;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-property: max-height, box-shadow;
+    position: fixed;
 }
 @media screen and (max-width: 1575px) {
     :host{
@@ -239,7 +240,25 @@ nav .mdl-navigation__link:hover, nav .mdl-navigation__link.download:hover>span, 
 }
 
 
+.notification{
+    position: absolute;
+    width: auto;
+    z-index: 999;
+    right: 0;
+    display: inline-block;
+}
+.notification a{
 
+    color: #F44336;
+    text-decoration: none;
 
+}
 
+@media screen and (max-width: 640px){
+    .notification{
+        width: 90%;
+        padding-right: 5%;
+    }
+
+}
 

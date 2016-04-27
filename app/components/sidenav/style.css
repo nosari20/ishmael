@@ -7,7 +7,7 @@
     flex-shrink: 0;
     z-index: 1000;
 
-    position: absolute;
+    position: fixed;
     height: 100%;
     top: 0;
 
@@ -104,3 +104,4 @@ header{
 .login .email{
     font-size: smaller;
 }
+

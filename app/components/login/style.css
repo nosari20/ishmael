@@ -1,0 +1,97 @@
+:host{
+    display: none;
+}
+:host(.open){
+    display: block;
+    position: fixed;
+    z-index: 9999;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    top: 0px;
+    background: #eee;
+
+    -webkit-animation-name: RIPPLER;
+    -webkit-animation-duration: 1.5s;
+    -webkit-animation-fill-mode: forwards;
+    animation-name: RIPPLER;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+    border-radius: 50%;
+}
+.wrapper{
+    display: inline-block;
+    width: 380px;
+    max-width: 100vw;
+    padding: 3em 2em 2em 2em;
+    background: #fafafa;
+    border: 1px solid #ebebeb;
+    box-shadow: rgba(0,0,0,0.14902) 0px 1px 1px 0px,rgba(0,0,0,0.09804) 0px 1px 2px 0px;
+    margin: auto;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: auto;
+    top: 25%;
+    transform: scale(.7);
+    text-align: center;
+
+
+}
+
+.group {
+    position: relative;
+    margin-bottom: 45px;
+}
+
+h1{
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    text-align: center;
+    top: 20%;
+    color: #636363;
+    font-weight: 300;
+    transform: scale(.7);
+}
+
+
+
+
+
+@-webkit-keyframes RIPPLER {
+    0%   {
+        webkit-transform: scale(0);
+        -ms-transform: scale(0);
+        transform: scale(0);
+        border-radius: 50%;
+    }
+
+    99%   {
+        webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+        border-radius: 50%;
+    }
+    100%   {
+        webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+        border-radius: 0;
+    }
+}
+@keyframes RIPPLER {
+    0%   {
+        webkit-transform: scale(0);
+        -ms-transform: scale(0);
+        transform: scale(0);
+    }
+
+    100%   {
+        webkit-transform: scale(1);
+        -ms-transform: scale(1.2);
+        transform: scale(1.5);
+
+    }
+
+}

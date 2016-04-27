@@ -1,4 +1,4 @@
-System.register(['angular2/core', 'angular2/router', "../components/layout/layout.component", "../components/header/header.component", "../components/footer/footer.component", "../content/home/home.component", "../content/contact/contact.component", "../content/videos/videos.component", "../components/header/link/header-item.component", "../components/header/search/search.component", "../components/sidenav/link/header-item.component"], function(exports_1, context_1) {
+System.register(['angular2/core', 'angular2/router', "../components/layout/layout.component", "../components/header/header.component", "../components/footer/footer.component", "../content/home/home.component", "../content/contact/contact.component", "../content/videos/videos.component", "../components/header/link/header-item.component", "../components/header/search/search.component", "../components/sidenav/link/header-item.component", "../components/login/login.component", "../components/button/button.component"], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,7 +10,7 @@ System.register(['angular2/core', 'angular2/router', "../components/layout/layou
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, router_1, layout_component_1, header_component_1, footer_component_1, home_component_1, contact_component_1, videos_component_1, header_item_component_1, search_component_1, header_item_component_2;
+    var core_1, router_1, layout_component_1, header_component_1, footer_component_1, home_component_1, contact_component_1, videos_component_1, header_item_component_1, search_component_1, header_item_component_2, login_component_1, button_component_1;
     var App;
     return {
         setters:[
@@ -46,15 +46,26 @@ System.register(['angular2/core', 'angular2/router', "../components/layout/layou
             },
             function (header_item_component_2_1) {
                 header_item_component_2 = header_item_component_2_1;
+            },
+            function (login_component_1_1) {
+                login_component_1 = login_component_1_1;
+            },
+            function (button_component_1_1) {
+                button_component_1 = button_component_1_1;
             }],
         execute: function() {
             App = (function () {
                 function App() {
+                    this._showLogin = false;
                 }
+                App.prototype.showLogin = function (event) {
+                    this._showLogin = !this._showLogin;
+                    console.log(event);
+                };
                 App = __decorate([
                     core_1.Component({
                         selector: 'my-app',
-                        directives: [layout_component_1.LayoutComponent, header_component_1.Header, footer_component_1.Footer, header_item_component_1.HeaderLink, search_component_1.Search, header_item_component_2.SidenavLink, router_1.ROUTER_DIRECTIVES],
+                        directives: [layout_component_1.LayoutComponent, header_component_1.Header, footer_component_1.Footer, header_item_component_1.HeaderLink, search_component_1.Search, header_item_component_2.SidenavLink, login_component_1.Login, button_component_1.Button, router_1.ROUTER_DIRECTIVES],
                         templateUrl: 'app/app/template.html',
                         styleUrls: ['app/app/style.css'],
                     }),

@@ -1,13 +1,15 @@
 import {Component} from 'angular2/core';
 import {Router}              from 'angular2/router';
 import {Sidenav} from "../sidenav/sidenav.component";
+import {Snackbar} from "../snackbar/snackbar.component";
+import {Login} from "../login/login.component";
 
 
 @Component({
     selector: 'header',
     templateUrl:'app/components/header/header.html',
     styleUrls: ['app/components/header/style.css'],
-    directives: [Sidenav]
+    directives: [Sidenav, Snackbar]
 })
 
 export class Header{
@@ -17,7 +19,6 @@ export class Header{
     public status:String='closed';
 
     constructor(private _router: Router){
-
     }
 
     toggleNav(){

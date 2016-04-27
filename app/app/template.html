@@ -4,17 +4,20 @@
         <aside>
             <sidenav-link [_routeName]="'Home'">Home</sidenav-link>
             <sidenav-link [_routeName]="'Contact'">Contact</sidenav-link>
+            <button (click)="showLogin()">Login</button>
+
+
         </aside>
 
 
-        <!--
-        <header-link [_routeName]="'Home'">Home</header-link>
-        <header-link [_routeName]="'Contact'">Contact</header-link>
-        -->
+
 
         <search></search>
 
+
+
     </header>
+
 
 
     <main>
@@ -26,3 +29,7 @@
     </main>
     <footer></footer>
 </layout>
+
+
+<login [class.open]="_showLogin" (closeLogin)="showLogin($event)"></login>
+
