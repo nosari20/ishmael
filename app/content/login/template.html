@@ -1,0 +1,14 @@
+
+
+        <div class="wrapper">
+
+            <h1>Login</h1>
+
+            <div class="group">
+                <md-input [type]="'userEmail'" [name]="'email'" [(ngModel)]="user.email">E-Mail</md-input>
+            </div>
+            <div class="group">
+                <md-input [type]="'userPassword'" [name]="'password'" [(ngModel)]="user.password">Password</md-input>
+            </div>
+            <button (click)="login()">Login</button>
+        </div>

@@ -12,14 +12,14 @@ import {Book} from "../../components/book/book.component";
 
 
 @Component({
-    templateUrl: 'app/content/contact/template.html',
-    styleUrls: ['app/content/contact/style.css'],
+    templateUrl: 'app/content/books/template.html',
+    styleUrls: ['app/content/books/style.css'],
     directives: [Card,Fab,Button,Book],
     host: {'class' : 'ng-animate page'}
 
 })
 
-export class Contact {
+export class Books {
 
 }
 

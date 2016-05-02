@@ -1,6 +1,7 @@
 import {Component, Output, EventEmitter} from 'angular2/core';
 import {MdInput, MdInputValueAccessor} from "../input/input/input.component";
 import {Button} from "../button/button.component";
+import {User, AuthenticationService} from "../../services/authentication/authentication.service";
 
 
 
@@ -11,30 +12,26 @@ import {Button} from "../button/button.component";
     directives: [MdInput, Button,MdInputValueAccessor]
 })
 
-export class Login {
+export class MdLogin {
+    
+    user=new User('','');
 
-    @Output('closeLogin') eventEmitter = new EventEmitter();
-    user=new User(0,'','','','');
 
-
+    constructor(
+        private _service:AuthenticationService) {}
 
 
     validate(){
-        this.eventEmitter.emit(this.user);//WITH LOGIN DATA
+        //this.eventEmitter.emit(this.user);//WITH LOGIN DATA
+        if(!this._service.login(this.user)){
+            console.log('Failed to login');
+        }
+
     }
 
 }
 
 
-export class User {
-    constructor(
-        public id: number,
-        public email: string,
-        public password: string,
-        public name: string,
-        public firstName: string
-    ) {  }
-}
 
 
 

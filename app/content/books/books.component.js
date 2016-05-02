@@ -11,7 +11,7 @@ System.register(['angular2/core', "../../components/card/card.component", "../..
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
     var core_1, card_component_1, fab_component_component_1, button_component_1, book_component_1;
-    var Contact;
+    var Books;
     return {
         setters:[
             function (core_1_1) {
@@ -30,22 +30,22 @@ System.register(['angular2/core', "../../components/card/card.component", "../..
                 book_component_1 = book_component_1_1;
             }],
         execute: function() {
-            Contact = (function () {
-                function Contact() {
+            Books = (function () {
+                function Books() {
                 }
-                Contact = __decorate([
+                Books = __decorate([
                     core_1.Component({
-                        templateUrl: 'app/content/contact/template.html',
-                        styleUrls: ['app/content/contact/style.css'],
+                        templateUrl: 'app/content/books/template.html',
+                        styleUrls: ['app/content/books/style.css'],
                         directives: [card_component_1.Card, fab_component_component_1.Fab, button_component_1.Button, book_component_1.Book],
                         host: { 'class': 'ng-animate page' }
                     }), 
                     __metadata('design:paramtypes', [])
-                ], Contact);
-                return Contact;
+                ], Books);
+                return Books;
             }());
-            exports_1("Contact", Contact);
+            exports_1("Books", Books);
         }
     }
 });
-//# sourceMappingURL=contact.component.js.map
+//# sourceMappingURL=books.component.js.map

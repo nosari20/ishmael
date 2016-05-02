@@ -3,8 +3,11 @@
 
         <aside>
             <sidenav-link [_routeName]="'Home'">Home</sidenav-link>
-            <sidenav-link [_routeName]="'Contact'">Contact</sidenav-link>
-            <button (click)="showLogin()">Login</button>
+            <sidenav-link [_routeName]="'Books'">Books</sidenav-link>
+            <sidenav-link [_routeName]="'Login'">Login</sidenav-link>
+            <sidenav-link [_routeName]="'Profile'">Profile</sidenav-link>
+            <sidenav-link [_routeName]="'Home'" (click)="logout()">Logout</sidenav-link>
+            <!--<button (click)="showLogin()">Login</button>-->
 
 
         </aside>
@@ -31,5 +34,5 @@
 </layout>
 
 
-<login [class.open]="_showLogin" (closeLogin)="showLogin($event)"></login>
+<!--<login [class.open]="_showLogin" (closeLogin)="showLogin($event)"></login>-->
 
